@@ -49,10 +49,15 @@ public class DealMapDefinition {
 		
 	    for( Map<String, String> data: dealData.asMaps(String.class, String.class)) {
 	    driver.findElement(By.name("email")).sendKeys(data.get("username"));
-	    driver.findElement(By.name("password")).sendKeys(data.get("password"));
-	    driver.findElement(By.xpath("//div[text()='Login']")).click();
-	    
+	    Thread.sleep(2000);
+	    driver.findElement(By.name("email")).clear();
+	    Thread.sleep(2000);
+	    driver.findElement(By.name("password")).sendKeys(data.get("password"));	 
+	    Thread.sleep(2000);
+	    driver.findElement(By.name("password")).clear();
+	    Thread.sleep(2000);
 	   }
+	    driver.findElement(By.xpath("//div[text()='Login']")).click();
 	    
 	}
 

@@ -77,42 +77,42 @@ formatter.match({
   "location": "DealMapDefinition.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 4513486618,
+  "duration": 20490335394,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapDefinition.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 182917207,
+  "duration": 164324810,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapDefinition.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 8808038376,
+  "duration": 4978472290,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapDefinition.user_provided_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 718771665,
+  "duration": 16835514074,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapDefinition.user_is_on_Home_page()"
 });
 formatter.result({
-  "duration": 3973539,
+  "duration": 4169624,
   "status": "passed"
 });
 formatter.match({
   "location": "DealMapDefinition.user_quit_the_browser()"
 });
 formatter.result({
-  "duration": 107170472,
+  "duration": 110732953,
   "status": "passed"
 });
 });
