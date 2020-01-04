@@ -17,7 +17,6 @@ import junit.framework.Assert;
 
 public class DealMapDefinition {
 	
-
 	WebDriver driver;
 	WebElement elem;
 	

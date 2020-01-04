@@ -1,15 +1,21 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.073076">
-<testcase classname="Free CRM tagging Feature" name="this is Regressiontest1" time="0.071786">
-<system-out><![CDATA[Given this is Regressiontest1...............................................passed
+<testsuite failures="0" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="3" time="0.071342">
+<testcase classname="This is Hook Feature" name="free CRM create deal test" time="0.070626">
+<system-out><![CDATA[Given user is on deal page..................................................passed
+When user fills the form....................................................passed
+Then deal is created........................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM tagging Feature" name="this is Regressiontest2" time="0.000028">
-<system-out><![CDATA[Given this is Regressiontest2...............................................passed
+<testcase classname="This is Hook Feature" name="free CRM create contact test" time="0.000434">
+<system-out><![CDATA[Given user is on contact page...............................................passed
+When user fills the contact form............................................passed
+Then contact is created.....................................................passed
 ]]></system-out>
 </testcase>
-<testcase classname="Free CRM tagging Feature" name="this is smoke OR Regressiontest1" time="0.001262">
-<system-out><![CDATA[Given this is  smoke OR Regressiontest1.....................................passed
+<testcase classname="This is Hook Feature" name="free CRM create email test" time="0.000282">
+<system-out><![CDATA[Given user is on email page.................................................passed
+When user fills the mail form...............................................passed
+Then mailpage is created....................................................passed
 ]]></system-out>
 </testcase>
 </testsuite>
