@@ -12,7 +12,7 @@ Then user provide the contact details "<firstname>" and "<lastname>" and "<posit
 Then user quit the browser
 
 Examples:
-       | username | password | firstname|lastname|positions|
-       | naveenk  | test@123 | Tom      |peter   |manager  |
-       | pretty   | test@243 | david    |Dsouza  |Director |
+       | username                 | password    | firstname|lastname|email          |
+       | bewarepretty@gmail.com   | Active@2020 | david    |Dsouza  |abc@gmail.com  |
+       | bewarepretty@gmail.com   | Active@2020 | tom      |ABCD    |efg@gmail.com  |
       

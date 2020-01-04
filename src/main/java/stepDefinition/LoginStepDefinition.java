@@ -68,20 +68,18 @@ public class LoginStepDefinition {
 	
 	@Then("^user is moves to contacts page$")
 	public void user_is_moves_to_contacts_page() throws Throwable {
-		driver.switchTo().frame("mainpanel");
-		Actions action = new Actions(driver);
-		action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
-		driver.findElement(By.xpath("//a[contains(text(),'new Contact']")).click();
-	   
+		driver.switchTo().frame(0);
+		driver.findElement(By.xpath("//span[text()='Contacts']")).click();
+		driver.findElement(By.xpath("//*[text()='New']")).click();   
 	}
 
 	@Then("^user provide the contact details \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
-	public void user_provide_the_contact_details_and_and(String firstname, String lastname, String position) throws Throwable {
-		driver.findElement(By.id("first_name")).sendKeys(firstname);
-		driver.findElement(By.id("surname")).sendKeys(lastname);
-		driver.findElement(By.id("company_position")).sendKeys(position);
-		driver.findElement(By.xpath("//input[@type='submit' and @value='save']")).click();
-	    
+	public void user_provide_the_contact_details_and_and(String firstname, String lastname, String email) throws Throwable {
+		driver.findElement(By.cssSelector("input[name='first_name']")).sendKeys(firstname);
+		driver.findElement(By.cssSelector("input[name='last_name']")).sendKeys(lastname);
+		driver.findElement(By.cssSelector("input[placeholder='Email address']")).sendKeys(email);		
+		driver.findElement(By.xpath("//*[text()='Save']")).click();
+		    
 	}
 
 	
