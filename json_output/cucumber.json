@@ -3,121 +3,104 @@
     "line": 1,
     "elements": [
       {
-        "comments": [
-          {
-            "line": 2,
-            "value": "# Use of DataTable"
-          }
-        ],
-        "line": 3,
-        "name": "Free CRM create new Deal scenario",
+        "line": 12,
+        "name": "this is Regressiontest1",
         "description": "",
-        "id": "deal-data-creation;free-crm-create-new-deal-scenario",
+        "id": "free-crm-tagging-feature;this-is-regressiontest1",
         "type": "scenario",
         "keyword": "Scenario",
         "steps": [
           {
             "result": {
-              "duration": 20490335394,
-              "status": "passed"
-            },
-            "line": 6,
-            "name": "user is already on Login Page",
-            "match": {
-              "location": "DealMapDefinition.user_is_already_on_Login_Page()"
-            },
-            "keyword": "Given "
-          },
-          {
-            "result": {
-              "duration": 164324810,
-              "status": "passed"
-            },
-            "line": 7,
-            "name": "title of login page is Free CRM",
-            "match": {
-              "location": "DealMapDefinition.title_of_login_page_is_Free_CRM()"
-            },
-            "keyword": "When "
-          },
-          {
-            "result": {
-              "duration": 4978472290,
-              "status": "passed"
-            },
-            "line": 8,
-            "name": "user clicks on Login button",
-            "match": {
-              "location": "DealMapDefinition.user_clicks_on_Login_button()"
-            },
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 16835514074,
-              "status": "passed"
-            },
-            "line": 9,
-            "name": "user provided username and password",
-            "match": {
-              "location": "DealMapDefinition.user_provided_username_and_password(DataTable)"
-            },
-            "rows": [
-              {
-                "cells": [
-                  "username",
-                  "password"
-                ],
-                "line": 10
-              },
-              {
-                "cells": [
-                  "bewarepretty@gmail.com",
-                  "Active@2020"
-                ],
-                "line": 11
-              },
-              {
-                "cells": [
-                  "abc@gmail.com",
-                  "Active@2020"
-                ],
-                "line": 12
-              }
-            ],
-            "keyword": "Then "
-          },
-          {
-            "result": {
-              "duration": 4169624,
+              "duration": 71786002,
               "status": "passed"
             },
             "line": 13,
-            "name": "user is on Home page",
+            "name": "this is Regressiontest1",
             "match": {
-              "location": "DealMapDefinition.user_is_on_Home_page()"
+              "location": "TagDefinition.this_is_Regressiontest1()"
             },
-            "keyword": "And "
-          },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 11,
+            "name": "@Regressiontest"
+          }
+        ]
+      },
+      {
+        "line": 16,
+        "name": "this is Regressiontest2",
+        "description": "",
+        "id": "free-crm-tagging-feature;this-is-regressiontest2",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
           {
             "result": {
-              "duration": 110732953,
+              "duration": 28242,
               "status": "passed"
             },
-            "line": 14,
-            "name": "user quit the browser",
+            "line": 17,
+            "name": "this is Regressiontest2",
             "match": {
-              "location": "DealMapDefinition.user_quit_the_browser()"
+              "location": "TagDefinition.this_is_Regressiontest2()"
             },
-            "keyword": "Then "
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 15,
+            "name": "@Regressiontest"
+          }
+        ]
+      },
+      {
+        "line": 21,
+        "name": "this is smoke OR Regressiontest1",
+        "description": "",
+        "id": "free-crm-tagging-feature;this-is-smoke-or-regressiontest1",
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 1261653,
+              "status": "passed"
+            },
+            "line": 22,
+            "name": "this is  smoke OR Regressiontest1",
+            "match": {
+              "arguments": [
+                {
+                  "val": "1",
+                  "offset": 32
+                }
+              ],
+              "location": "TagDefinition.this_is_smoke_OR_Regressiontest(int)"
+            },
+            "keyword": "Given "
+          }
+        ],
+        "tags": [
+          {
+            "line": 20,
+            "name": "@smoketest"
+          },
+          {
+            "line": 20,
+            "name": "@Regressiontest"
           }
         ]
       }
     ],
-    "name": "Deal data creation",
+    "name": "Free CRM tagging Feature",
     "description": "",
-    "id": "deal-data-creation",
+    "id": "free-crm-tagging-feature",
     "keyword": "Feature",
-    "uri": "/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/dealMap.feature"
+    "uri": "/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/tagging.feature"
   }
 ]

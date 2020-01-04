@@ -1,118 +1,97 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/dealMap.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/tagging.feature");
 formatter.feature({
   "line": 1,
-  "name": "Deal data creation",
+  "name": "Free CRM tagging Feature",
   "description": "",
-  "id": "deal-data-creation",
+  "id": "free-crm-tagging-feature",
   "keyword": "Feature"
 });
 formatter.scenario({
-  "comments": [
-    {
-      "line": 2,
-      "value": "# Use of DataTable"
-    }
-  ],
-  "line": 3,
-  "name": "Free CRM create new Deal scenario",
+  "line": 12,
+  "name": "this is Regressiontest1",
   "description": "",
-  "id": "deal-data-creation;free-crm-create-new-deal-scenario",
+  "id": "free-crm-tagging-feature;this-is-regressiontest1",
   "type": "scenario",
-  "keyword": "Scenario"
-});
-formatter.step({
-  "line": 6,
-  "name": "user is already on Login Page",
-  "keyword": "Given "
-});
-formatter.step({
-  "line": 7,
-  "name": "title of login page is Free CRM",
-  "keyword": "When "
-});
-formatter.step({
-  "line": 8,
-  "name": "user clicks on Login button",
-  "keyword": "Then "
-});
-formatter.step({
-  "line": 9,
-  "name": "user provided username and password",
-  "rows": [
+  "keyword": "Scenario",
+  "tags": [
     {
-      "cells": [
-        "username",
-        "password"
-      ],
-      "line": 10
-    },
-    {
-      "cells": [
-        "bewarepretty@gmail.com",
-        "Active@2020"
-      ],
-      "line": 11
-    },
-    {
-      "cells": [
-        "abc@gmail.com",
-        "Active@2020"
-      ],
-      "line": 12
+      "line": 11,
+      "name": "@Regressiontest"
     }
-  ],
-  "keyword": "Then "
+  ]
 });
 formatter.step({
   "line": 13,
-  "name": "user is on Home page",
-  "keyword": "And "
+  "name": "this is Regressiontest1",
+  "keyword": "Given "
+});
+formatter.match({
+  "location": "TagDefinition.this_is_Regressiontest1()"
+});
+formatter.result({
+  "duration": 71786002,
+  "status": "passed"
+});
+formatter.scenario({
+  "line": 16,
+  "name": "this is Regressiontest2",
+  "description": "",
+  "id": "free-crm-tagging-feature;this-is-regressiontest2",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 15,
+      "name": "@Regressiontest"
+    }
+  ]
 });
 formatter.step({
-  "line": 14,
-  "name": "user quit the browser",
-  "keyword": "Then "
+  "line": 17,
+  "name": "this is Regressiontest2",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealMapDefinition.user_is_already_on_Login_Page()"
+  "location": "TagDefinition.this_is_Regressiontest2()"
 });
 formatter.result({
-  "duration": 20490335394,
+  "duration": 28242,
   "status": "passed"
 });
-formatter.match({
-  "location": "DealMapDefinition.title_of_login_page_is_Free_CRM()"
+formatter.scenario({
+  "line": 21,
+  "name": "this is smoke OR Regressiontest1",
+  "description": "",
+  "id": "free-crm-tagging-feature;this-is-smoke-or-regressiontest1",
+  "type": "scenario",
+  "keyword": "Scenario",
+  "tags": [
+    {
+      "line": 20,
+      "name": "@smoketest"
+    },
+    {
+      "line": 20,
+      "name": "@Regressiontest"
+    }
+  ]
 });
-formatter.result({
-  "duration": 164324810,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapDefinition.user_clicks_on_Login_button()"
-});
-formatter.result({
-  "duration": 4978472290,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapDefinition.user_provided_username_and_password(DataTable)"
-});
-formatter.result({
-  "duration": 16835514074,
-  "status": "passed"
-});
-formatter.match({
-  "location": "DealMapDefinition.user_is_on_Home_page()"
-});
-formatter.result({
-  "duration": 4169624,
-  "status": "passed"
+formatter.step({
+  "line": 22,
+  "name": "this is  smoke OR Regressiontest1",
+  "keyword": "Given "
 });
 formatter.match({
-  "location": "DealMapDefinition.user_quit_the_browser()"
+  "arguments": [
+    {
+      "val": "1",
+      "offset": 32
+    }
+  ],
+  "location": "TagDefinition.this_is_smoke_OR_Regressiontest(int)"
 });
 formatter.result({
-  "duration": 110732953,
+  "duration": 1261653,
   "status": "passed"
 });
 });
