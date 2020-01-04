@@ -1,4 +1,4 @@
-$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/Deal.feature");
+$(document).ready(function() {var formatter = new CucumberHTML.DOMFormatter($('.cucumber-report'));formatter.uri("/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/dealMap.feature");
 formatter.feature({
   "line": 1,
   "name": "Deal data creation",
@@ -41,64 +41,78 @@ formatter.step({
   "rows": [
     {
       "cells": [
+        "username",
+        "password"
+      ],
+      "line": 10
+    },
+    {
+      "cells": [
         "bewarepretty@gmail.com",
         "Active@2020"
       ],
-      "line": 10
+      "line": 11
+    },
+    {
+      "cells": [
+        "abc@gmail.com",
+        "Active@2020"
+      ],
+      "line": 12
     }
   ],
   "keyword": "Then "
 });
 formatter.step({
-  "line": 11,
+  "line": 13,
   "name": "user is on Home page",
   "keyword": "And "
 });
 formatter.step({
-  "line": 12,
+  "line": 14,
   "name": "user quit the browser",
   "keyword": "Then "
 });
 formatter.match({
-  "location": "DealStepDefinition.user_is_already_on_Login_Page()"
+  "location": "DealMapDefinition.user_is_already_on_Login_Page()"
 });
 formatter.result({
-  "duration": 4910414049,
+  "duration": 4513486618,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.title_of_login_page_is_Free_CRM()"
+  "location": "DealMapDefinition.title_of_login_page_is_Free_CRM()"
 });
 formatter.result({
-  "duration": 174641691,
+  "duration": 182917207,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_clicks_on_Login_button()"
+  "location": "DealMapDefinition.user_clicks_on_Login_button()"
 });
 formatter.result({
-  "duration": 3875879945,
+  "duration": 8808038376,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_provided_username_and_password(DataTable)"
+  "location": "DealMapDefinition.user_provided_username_and_password(DataTable)"
 });
 formatter.result({
-  "duration": 488114277,
+  "duration": 718771665,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_is_on_Home_page()"
+  "location": "DealMapDefinition.user_is_on_Home_page()"
 });
 formatter.result({
-  "duration": 4896148,
+  "duration": 3973539,
   "status": "passed"
 });
 formatter.match({
-  "location": "DealStepDefinition.user_quit_the_browser()"
+  "location": "DealMapDefinition.user_quit_the_browser()"
 });
 formatter.result({
-  "duration": 101811361,
+  "duration": 107170472,
   "status": "passed"
 });
 });
