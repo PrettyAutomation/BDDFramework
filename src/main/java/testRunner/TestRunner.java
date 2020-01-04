@@ -7,7 +7,8 @@ import cucumber.api.junit.Cucumber;
 
 @RunWith(Cucumber.class)
 @CucumberOptions(
-		features = "/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/login.feature" // path of the feature file
+//		features = "/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/login.feature" // path of the feature file
+		features = "/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/Contacts.feature"
 		,glue= {"stepDefinition"}, //to define the package where all definition files are present
                   format= {"pretty","html:test-output","json:json_output/cucumber.json","junit:junit_xml/cucumber.xml"}, //to generate good report
 		dryRun = false, // to check mapping between step definition and features but no failure in execution
@@ -17,3 +18,4 @@ import cucumber.api.junit.Cucumber;
 public class TestRunner {
 
 }
+ 

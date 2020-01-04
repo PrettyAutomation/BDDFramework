@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 
 import cucumber.api.java.en.Given;
 import cucumber.api.java.en.Then;
@@ -44,11 +45,9 @@ public class LoginStepDefinition {
 //	    driver.findElement(By.name("password")).sendKeys("test@123");
 //	    driver.findElement(By.xpath("//div[text()='Login']")).click();
 //	}
-//	
 
-	
-	//1.\"(.*)\"
-	//2. \"([^\"]*)\"
+//	//1.\"(.*)\"
+//	//2. \"([^\"]*)\"
 	
 	   @Then("^user enters \"(.*)\" and \"(.*)\"$")
 		public void user_enters_username_and_password(String username, String passward){
@@ -66,6 +65,25 @@ public class LoginStepDefinition {
 		Assert.assertEquals("Cogmento CRM", hometitle);
 		
 	}
+	
+	@Then("^user is moves to contacts page$")
+	public void user_is_moves_to_contacts_page() throws Throwable {
+		driver.switchTo().frame("mainpanel");
+		Actions action = new Actions(driver);
+		action.moveToElement(driver.findElement(By.xpath("//a[contains(text(),'Contacts')]"))).build().perform();
+		driver.findElement(By.xpath("//a[contains(text(),'new Contact']")).click();
+	   
+	}
+
+	@Then("^user provide the contact details \"([^\"]*)\" and \"([^\"]*)\" and \"([^\"]*)\"$")
+	public void user_provide_the_contact_details_and_and(String firstname, String lastname, String position) throws Throwable {
+		driver.findElement(By.id("first_name")).sendKeys(firstname);
+		driver.findElement(By.id("surname")).sendKeys(lastname);
+		driver.findElement(By.id("company_position")).sendKeys(position);
+		driver.findElement(By.xpath("//input[@type='submit' and @value='save']")).click();
+	    
+	}
+
 	
 	@Then("^user quit the browser$")
 	public void user_quit_the_browser() {

@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite failures="2" name="cucumber.runtime.formatter.JUnitFormatter" skipped="0" tests="2" time="34.800524">
+<testcase classname="Free CRM Login Feature" name="Free CRM Login Test scenario" time="20.017761">
+<failure message="org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MBLR02712FBE', ip: 'fd58:bad4:d214:7900:90c0:a11:1419:eecb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)&#10;&#9;at stepDefinition.LoginStepDefinition.user_is_moves_to_contacts_page(LoginStepDefinition.java:71)&#10;&#9;at ✽.Then user is moves to contacts page(/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/Contacts.feature:10)&#10;"><![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Free CRM........................................passed
+Then user clicks on Login button............................................passed
+Then user enters "naveenk" and "test@123"...................................passed
+And user is on Home page....................................................passed
+Then user is moves to contacts page.........................................failed
+Then user provide the contact details "Tom" and "peter" and "manager".......skipped
+Then user quit the browser..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MBLR02712FBE', ip: 'fd58:bad4:d214:7900:90c0:a11:1419:eecb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at stepDefinition.LoginStepDefinition.user_is_moves_to_contacts_page(LoginStepDefinition.java:71)
+	at ✽.Then user is moves to contacts page(/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/Contacts.feature:10)
+]]></failure>
+</testcase>
+<testcase classname="Free CRM Login Feature" name="Free CRM Login Test scenario 2" time="14.782763">
+<failure message="org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel&#10;Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'&#10;System info: host: 'MBLR02712FBE', ip: 'fd58:bad4:d214:7900:90c0:a11:1419:eecb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_181'&#10;Driver info: driver.version: unknown&#10;&#9;at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)&#10;&#9;at stepDefinition.LoginStepDefinition.user_is_moves_to_contacts_page(LoginStepDefinition.java:71)&#10;&#9;at ✽.Then user is moves to contacts page(/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/Contacts.feature:10)&#10;"><![CDATA[Given user is already on Login Page.........................................passed
+When title of login page is Free CRM........................................passed
+Then user clicks on Login button............................................passed
+Then user enters "pretty" and "test@243"....................................passed
+And user is on Home page....................................................passed
+Then user is moves to contacts page.........................................failed
+Then user provide the contact details "david" and "Dsouza" and "Director"...skipped
+Then user quit the browser..................................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchFrameException: No frame element found by name or id mainpanel
+Build info: version: '3.141.59', revision: 'e82be7d358', time: '2018-11-14T08:17:03'
+System info: host: 'MBLR02712FBE', ip: 'fd58:bad4:d214:7900:90c0:a11:1419:eecb%en0', os.name: 'Mac OS X', os.arch: 'x86_64', os.version: '10.13.5', java.version: '1.8.0_181'
+Driver info: driver.version: unknown
+	at org.openqa.selenium.remote.RemoteWebDriver$RemoteTargetLocator.frame(RemoteWebDriver.java:885)
+	at stepDefinition.LoginStepDefinition.user_is_moves_to_contacts_page(LoginStepDefinition.java:71)
+	at ✽.Then user is moves to contacts page(/Users/pretty.sanwale/eclipse/reporting-2019-09/MavenBDDFramework/src/main/java/Features/Contacts.feature:10)
+]]></failure>
+</testcase>
+</testsuite>
